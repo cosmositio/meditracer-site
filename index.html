@@ -1,151 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Meditracer</title>
-  <style>
-    * {
-      box-sizing: border-box;
-    }
 
+  <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: linear-gradient(180deg, #081226 0%, #0f172a 100%);
+      background: linear-gradient(180deg, #081226, #0f172a);
       color: white;
       text-align: center;
-      padding: 40px 20px 60px;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
+      padding: 40px 20px;
     }
 
     .logo {
       width: 110px;
-      height: 110px;
       border-radius: 24px;
-      margin-bottom: 20px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+      margin-top: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
     }
 
     h1 {
-      margin: 0;
-      font-size: 48px;
-      font-weight: 700;
-      letter-spacing: -1px;
+      font-size: 42px;
+      margin: 20px 0 10px;
     }
 
-    .subtitle {
-      margin: 18px auto 10px;
-      font-size: 24px;
-      line-height: 1.5;
-      color: #d7e3ff;
-      max-width: 700px;
-    }
-
-    .developer {
-      margin-top: 10px;
+    p {
+      color: #cbd5f5;
       font-size: 18px;
-      color: #b8c7e6;
     }
 
     .card {
-      margin: 40px auto 0;
-      background: rgba(255, 255, 255, 0.06);
-      border: 1px solid rgba(255, 255, 255, 0.1);
-      border-radius: 24px;
-      padding: 30px 20px;
+      margin-top: 40px;
+      background: rgba(255,255,255,0.06);
+      border-radius: 20px;
+      padding: 25px;
       max-width: 800px;
-      backdrop-filter: blur(4px);
-    }
-
-    .features-title {
-      margin-top: 0;
-      margin-bottom: 20px;
-      font-size: 26px;
-      color: white;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .features {
-      list-style: none;
-      padding: 0;
-      margin: 0 0 30px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 14px;
+      margin-top: 20px;
     }
 
-    .features li {
-      background: rgba(255, 255, 255, 0.08);
-      border-radius: 999px;
-      padding: 12px 18px;
-      color: #dce7ff;
-      font-size: 16px;
+    .features span {
+      display: inline-block;
+      background: rgba(255,255,255,0.08);
+      padding: 10px 16px;
+      border-radius: 20px;
+      margin: 6px;
+      font-size: 14px;
     }
 
     .screenshot {
-      width: 100%;
-      max-width: 320px;
-      border-radius: 24px;
-      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45);
-      border: 4px solid rgba(255, 255, 255, 0.08);
+      width: 280px;
+      margin-top: 25px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
     }
 
-    .footer {
-      margin-top: 40px;
-      font-size: 14px;
-      color: #95a8cf;
+    .btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 14px 24px;
+      background: #22c55e;
+      color: white;
+      text-decoration: none;
+      border-radius: 12px;
+      font-weight: bold;
     }
 
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 36px;
-      }
+    .privacy {
+      margin-top: 15px;
+      display: block;
+      color: #94a3b8;
+      text-decoration: none;
+    }
 
-      .subtitle {
-        font-size: 20px;
-      }
-
-      .developer {
-        font-size: 16px;
-      }
-
-      .card {
-        padding: 24px 16px;
-      }
-
-      .features li {
-        font-size: 14px;
-      }
+    .dev {
+      margin-top: 20px;
+      font-size: 16px;
+      color: #9fb3d9;
     }
   </style>
 </head>
+
 <body>
-  <div class="container">
-    <img src="logo.png" alt="Meditracer Logo" class="logo" />
 
-    <h1>Meditracer</h1>
-    <p class="subtitle">Track your medications easily and never miss a dose.</p>
-    <p class="developer">Developer: Volkan Pekatik</p>
+  <!-- LOGO -->
+  <img src="Meditracer logo.png" class="logo">
 
-    <div class="card">
-      <h2 class="features-title">App Overview</h2>
+  <!-- TITLE -->
+  <h1>Meditracer</h1>
 
-      <ul class="features">
-        <li>Medication reminders</li>
-        <li>Daily dose tracking</li>
-        <li>Simple interface</li>
-        <li>Schedule management</li>
-      </ul>
+  <!-- DESCRIPTION -->
+  <p>Track your medications easily and never miss a dose.</p>
 
-      <img src="app.jpeg" alt="Meditracer App Screenshot" class="screenshot" />
+  <div class="dev">Developer: Volkan Pekatik</div>
+
+  <!-- CARD -->
+  <div class="card">
+    <h2>App Overview</h2>
+
+    <div class="features">
+      <span>Medication reminders</span>
+      <span>Daily dose tracking</span>
+      <span>Simple interface</span>
+      <span>Schedule management</span>
     </div>
 
-    <p class="footer">Meditracer medication tracking application</p>
+    <!-- SCREENSHOT -->
+    <img src="screenshot of program.jpeg" class="screenshot">
   </div>
+
+  <!-- BUTTON -->
+  <a href="#" class="btn">Download on Google Play (Coming Soon)</a>
+
+  <!-- PRIVACY -->
+  <a href="privacy.html" class="privacy">Privacy Policy</a>
+
 </body>
 </html>
